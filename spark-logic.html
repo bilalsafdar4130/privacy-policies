@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Blaze Assembly</title>
-<meta name="description" content="Privacy policy for Blaze Assembly (com.blazeassembly.app), an idle sparkler-art game for Android.">
+<title>Privacy Policy — SparkLogic</title>
+<meta name="description" content="Privacy policy for SparkLogic (com.bilalsafdar.sparklogic), a puzzle game for Android.">
 <style>
   :root {
-    --bg: #fbf7f0; --fg: #23212b; --dim: #5c5766; --rule: #e7ded1;
-    --accent: #c8531f; --panel: #f4ece0;
+    --bg: #ffffff; --fg: #1a1a1e; --dim: #56565e; --rule: #e2e2e8;
+    --accent: #0a6b78; --panel: #f6f6f9;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14121a; --fg: #ece7f1; --dim: #9c96a6; --rule: #2b2734;
-      --accent: #ffb03a; --panel: #1d1a25;
+      --bg: #0a0a0d; --fg: #ececf1; --dim: #9a9aa4; --rule: #26262e;
+      --accent: #40f2ff; --panel: #15151b;
     }
   }
   * { box-sizing: border-box; }
@@ -50,153 +50,192 @@
 <body>
 <main>
 
-<h1>Privacy Policy — Blaze Assembly</h1>
-<p class="updated">Last updated: 8 September 2026 · Package
-<code>com.blazeassembly.app</code></p>
+<h1>Privacy Policy — SparkLogic</h1>
+<p class="updated">Last updated: 15 August 2026 · Package
+<code>com.bilalsafdar.sparklogic</code></p>
 
-<p><strong>Blaze Assembly</strong> (“the app”, “we”, “us”) is an idle
-sparkler-art game for Android. This policy explains what information the app
-collects, why, who it is shared with, and what control you have over it.</p>
+<p>SparkLogic (“the app”, “we”, “us”) is a puzzle game for Android published by
+Bilal Safdar. This policy explains what information the app collects, why, who
+it is shared with, and what control you have over it.</p>
 
 <div class="lead">
-  <strong>The short version.</strong>
+  <strong>The short version</strong>
   <ul>
-    <li>There is <strong>no account</strong>. You never give us a name, an email address or a phone number, because there is nowhere to type one.</li>
-    <li>There is <strong>no advertising</strong> in the app and no advertising SDK in the build.</li>
-    <li>There are <strong>no in-app purchases</strong>. No real money changes hands anywhere in the app.</li>
-    <li>The app collects <strong>anonymous gameplay statistics</strong> through Google Firebase Analytics, and nothing else.</li>
-    <li>You can <strong>switch that off</strong> at any time, and in the EEA, the UK and Switzerland it is off until you say otherwise.</li>
-    <li>Your saved progress lives <strong>on your device</strong>. It is never uploaded.</li>
+    <li>The app has <strong>no accounts and no login</strong>. We never ask for
+      your name, email address, phone number or any other personal detail.</li>
+    <li>Your game progress is stored <strong>only on your device</strong>.</li>
+    <li>The app uses <strong>Google Firebase Analytics</strong> to understand how
+      the game is played, and <strong>Google AdMob</strong> to show two banner
+      advertisements.</li>
+    <li>Those two Google services collect <strong>device identifiers</strong>,
+      including your device’s advertising ID, and technical information about
+      your device.</li>
+    <li>The app requests <strong>no sensitive permissions</strong>: no location,
+      camera, microphone, contacts, photos, files or calendar.</li>
   </ul>
 </div>
 
-<h2>What the app collects</h2>
+<h2>What information is collected</h2>
 
-<h3>Anonymous gameplay statistics (Firebase Analytics)</h3>
+<h3>1. Information you give us</h3>
+<p><strong>None.</strong> There is no registration, no profile, no comment box,
+no chat, and no way to submit text or files to us through the app.</p>
 
-<p>The app reports events describing what happens in the game — a level opened,
-a shape finished, a fuse lit, an upgrade bought, a setting changed, or an error
-— so that we can tell which parts of the game people enjoy and which parts are
-broken.</p>
+<h3>2. Information stored on your device only</h3>
+<p>Your game progress is written to a save file in the app’s private storage on
+your device. It contains your level progress, star ratings, in-game currency
+balances, cosmetic purchases, daily mission progress and your settings.</p>
+<p>This file is <strong>never transmitted to us or to anyone else</strong>. It is
+not backed up to the cloud — the app explicitly disables Android’s automatic
+backup, so it does not leave your device at all. Uninstalling the app deletes
+it.</p>
 
+<h3>3. Information collected automatically by Google services</h3>
+<p>The app includes two Google software development kits (SDKs). Each collects
+data according to Google’s own policies, not ours.</p>
+
+<p><strong>Google Firebase Analytics</strong> — used to understand how the game
+is played, so we can tell which levels are too hard, where players stop, and
+whether features are used. It records events such as: starting and finishing a
+level (including how many moves and how long it took), completing the tutorial,
+using a hint, unlocking an achievement, claiming a daily reward, earning or
+spending in-game currency, making a purchase, and technical failures.</p>
+<p>Alongside these events, Firebase collects a randomly generated app instance
+identifier, your device model, operating system version, language, and an
+approximate region derived from your IP address.</p>
+
+<p><strong>Google AdMob</strong> — used to show advertisements. AdMob collects
+your device’s advertising ID and technical information about your device in
+order to select and measure ads.</p>
+
+<p><strong>None of the events the app sends contain your name, email address, or
+any text you have written</strong>, because the app never collects any of those
+things.</p>
+
+<h2>How the information is used</h2>
 <div class="tablewrap">
 <table>
-  <tr><th>What is sent</th><th>Example</th></tr>
-  <tr><td>The event and its parameters</td><td>“a commission finished: level <em>rooftop</em>, shape <em>kite</em>, 100% complete, 214 seconds”</td></tr>
-  <tr><td>The app version and platform</td><td><code>0.1.0</code>, <code>Android</code></td></tr>
-  <tr><td>The device model</td><td><code>Pixel 7a</code> — only on the diagnostic test event you send yourself from Settings</td></tr>
-  <tr><td>An anonymous app instance identifier</td><td>generated by the Firebase SDK; not linked to you, your Google account, or any advertising identifier</td></tr>
-  <tr><td>Coarse information Google’s SDK adds</td><td>country, language, OS version, and the fact that the app was opened</td></tr>
+  <tr><th>Purpose</th><th>Data used</th></tr>
+  <tr><td>Understanding how the game is played, and improving it</td>
+      <td>App activity events, device and OS information</td></tr>
+  <tr><td>Diagnosing crashes and technical faults</td>
+      <td>Diagnostic information, device and OS information</td></tr>
+  <tr><td>Showing advertisements</td>
+      <td>Advertising ID, device information</td></tr>
+  <tr><td>Delivering and verifying in-app purchases</td>
+      <td>Purchase information handled by Google Play</td></tr>
 </table>
 </div>
+<p>We do not sell your information. We do not build advertising profiles
+ourselves, and we do not receive any personally identifying information about
+you from Google.</p>
 
-<p>The whole list of events the app can send, and the question each one answers,
-is published in the source repository as
-<code>docs/ANALYTICS_KPIS.md</code>.</p>
+<h2>Advertising</h2>
+<p>SparkLogic shows <strong>two banner advertisements</strong>: one on the home
+screen and one on the shop screen. There are no full-screen adverts, no video
+adverts, and no adverts on any puzzle board. <strong>No part of the game is
+locked behind watching an advert.</strong></p>
+<p>Advertisements are provided by Google AdMob. Google may use your device’s
+advertising ID to show adverts that are relevant to you.</p>
+<p><strong>You can control this on your device.</strong> In Android
+<strong>Settings ▸ Privacy ▸ Ads</strong>, you can delete your advertising ID or
+opt out of personalised advertising. Doing so does not stop adverts appearing,
+but they will no longer be personalised.</p>
+<p>Google’s own policy on how it uses data from apps that use its services:
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
 
-<h3>What the app does <em>not</em> collect</h3>
+<h2>In-app purchases</h2>
+<p>The app offers optional in-app purchases for in-game currency and a supporter
+pack. All payments are processed by <strong>Google Play Billing</strong>. We
+never see or store your payment card details, billing address, or any other
+financial information — Google handles the transaction entirely and only tells
+the app whether a purchase succeeded.</p>
+<p>Nothing that affects gameplay is locked behind a purchase. Every in-game
+currency can be earned by playing.</p>
 
-<p>No name, email address, phone number, postal address, contacts, calendar,
-photos, files, microphone, camera, precise or approximate location, advertising
-identifier, browsing or search history, list of installed apps, health or
-fitness data, or payment information. There is no chat, no user-generated
-content and no way for one player to see another.</p>
-
-<h2>Why we collect it</h2>
-
-<ul>
-  <li><strong>To fix things.</strong> The app reports when a save fails or a level cannot be loaded. Those events should be permanently zero; when they are not, they are the only way we find out.</li>
-  <li><strong>To decide what to build.</strong> Whether people reach the moment the fuse is lit, and how far they get before they stop, is what tells us which parts of the game are working.</li>
-  <li>Nothing is used to build a profile of you, to target advertising, or to make any decision about you as an individual. It is counted, not read.</li>
-</ul>
-
-<h2>Who it is shared with</h2>
-
-<p><strong>Google</strong>, as the operator of Firebase Analytics, processes this
-data on our behalf. It is not sold, and it is not shared with anyone else — no
-advertising networks, no data brokers, no other analytics providers.</p>
-
-<ul>
-  <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li>
-  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-</ul>
-
-<h2>Your choices</h2>
-
-<h3>Turning it off</h3>
-<p>Open <strong>Settings → Privacy</strong> in the app and switch
-<em>Anonymous statistics</em> off. Nothing further is collected, from that
-moment, on that device. The game plays exactly the same either way — no feature
-is withheld, and nothing is nagged.</p>
-
-<h3>Consent in the EEA, the UK and Switzerland</h3>
-<p>If your device looks like it is in the European Economic Area, the United
-Kingdom or Switzerland, <strong>nothing at all is collected until you agree</strong>.
-The app asks once, on first launch, with both answers on the same screen at the
-same size. Saying nothing is the same as saying no. You can change your mind in
-either direction, for ever afterwards, in Settings → Privacy.</p>
-
-<h3>Deleting it</h3>
-<p><strong>Settings → Privacy → Delete my data</strong> discards the anonymous
-identifier Firebase holds for this installation and the record of your privacy
-choice. Anything sent before that point cannot be joined to anything sent
-after it.</p>
-<p>Uninstalling the app removes your saved progress from the device
-entirely.</p>
-
-<h3>Your rights</h3>
-<p>Where the GDPR, the UK GDPR, the Swiss FADP, the CCPA/CPRA or a comparable law
-applies to you, you have rights of access, correction, deletion, restriction,
-objection and portability. Because the app holds <strong>no information that
-identifies you</strong>, we cannot look up “your” data — there is nothing to look
-it up by. In practice the delete button above is the complete and immediate
-exercise of those rights. If you would like to ask anything else, write to the
-address at the bottom of this page.</p>
-
-<h2>Where your progress is kept</h2>
-
-<p>Coins, upgrades, unlocked levels, colours and settings are stored in a single
-file in the app’s own private storage on your device. It is never uploaded, it is
-not backed up to any server of ours, and no other app can read it. Android’s own
-backup for this app is switched off
-(<code>user_data_backup/allow=false</code>).</p>
+<h2>Who your information is shared with</h2>
+<p>The app itself sends data to only two third parties, both operated by
+Google:</p>
+<div class="tablewrap">
+<table>
+  <tr><th>Service</th><th>Purpose</th><th>Their privacy policy</th></tr>
+  <tr><td>Google Firebase Analytics</td><td>Analytics and diagnostics</td>
+      <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+  <tr><td>Google AdMob</td><td>Advertising</td>
+      <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  <tr><td>Google Play Billing</td><td>Processing purchases</td>
+      <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+</div>
+<p>We do not share your information with anyone else. We may disclose
+information if required to do so by law.</p>
 
 <h2>Children</h2>
+<p><strong>SparkLogic is not directed at children under 13.</strong> Its target
+audience in the Google Play Console is set to 13 and over, and it is not
+enrolled in Google Play’s Designed for Families programme.</p>
+<p>We do not knowingly collect personal information from children under 13. If
+you believe a child has provided information to us, contact us at the address
+below and we will act on it. In practice, the app collects no personal
+information from anyone.</p>
 
-<p>Blaze Assembly is not directed at children under 13 and is not part of
-Google Play’s Designed for Families programme. We do not knowingly collect
-personal information from children. If you believe a child has provided personal
-information, contact us and we will act on it — although, as above, the app
-holds nothing that identifies any individual.</p>
+<h2>Permissions the app requests</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td><code>VIBRATE</code></td>
+      <td>Haptic feedback when you tap a component. Can be switched off in the
+          app’s Settings.</td></tr>
+  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
+      <td>Required by the Google advertising and analytics SDKs. The game itself
+          is fully playable offline.</td></tr>
+  <tr><td><code>AD_ID</code></td>
+      <td>Access to the device advertising ID, required by AdMob.</td></tr>
+</table>
+</div>
+<p>The app requests <strong>no</strong> location, camera, microphone, contacts,
+storage, photo or calendar permissions.</p>
 
-<h2>Security</h2>
-
-<p>Everything the app sends is encrypted in transit (HTTPS, by the Firebase SDK).
-The app requests exactly one permission that touches the network —
-<code>INTERNET</code>, which the analytics SDK needs to upload its batched
-events — and <code>VIBRATE</code>, for the haptic tick when a sparkler is
-planted. It requests nothing else.</p>
+<h2>Your choices and your rights</h2>
+<ul>
+  <li><strong>Delete your game data.</strong> Open <strong>Settings ▸ RESET
+    PROGRESS</strong> inside the app to erase all local progress. Uninstalling
+    the app also removes it completely.</li>
+  <li><strong>Limit ad tracking.</strong> Use <strong>Android Settings ▸ Privacy
+    ▸ Ads</strong> to reset or delete your advertising ID, or to opt out of
+    personalised advertising.</li>
+  <li><strong>Ask us about your data.</strong> There is no account to look up, so
+    we hold nothing that identifies you personally. If you are in a region with
+    data protection rights (such as the UK/EU under GDPR, or California under
+    the CCPA) and wish to make a request about data held by Google’s services,
+    contact us and we will help where we can.</li>
+</ul>
+<p>Because the app has no accounts, we cannot identify an individual user’s
+data, and there is therefore nothing for us to retrieve or delete on our
+side.</p>
 
 <h2>Data retention</h2>
+<p>We retain no data ourselves. Analytics and advertising data is retained by
+Google according to its own retention settings, which are configured to Google’s
+default period for Firebase Analytics.</p>
 
-<p>Firebase Analytics event data is retained for <strong>14 months</strong>, the
-Firebase default, after which Google deletes it automatically. Aggregate reports
-(totals and counts, with no identifier attached) may be kept longer.</p>
+<h2>Security</h2>
+<p>Data sent by the Google SDKs is transmitted over encrypted HTTPS connections.
+Your save file is stored in the app’s private storage area, which other apps on
+your device cannot read.</p>
 
 <h2>Changes to this policy</h2>
-
-<p>If what the app collects ever changes materially, this page is updated and the
-date at the top changes with it — and, where consent applies, the question is
-asked again rather than an older answer being reused.</p>
+<p>If this policy changes, the updated version will be published at this same
+URL and the “Last updated” date at the top will change. Material changes will
+also be noted in the app’s release notes.</p>
 
 <h2>Contact</h2>
-
-<p>Questions about this policy, or about anything above:
+<p>Questions about this policy, or about privacy in SparkLogic:</p>
+<p><strong>Bilal Safdar</strong> —
 <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a></p>
 
 <footer>
-Blaze Assembly · <code>com.blazeassembly.app</code> · This policy covers the
-Android application only.
+SparkLogic · <code>com.bilalsafdar.sparklogic</code> · Last updated 15 August 2026
 </footer>
 
 </main>
