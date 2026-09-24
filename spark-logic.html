@@ -5,57 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — SparkLogic</title>
 <meta name="description" content="Privacy policy for SparkLogic (com.bilalsafdar.sparklogic), a puzzle game for Android.">
-<style>
-  :root {
-    --bg: #ffffff; --fg: #1a1a1e; --dim: #56565e; --rule: #e2e2e8;
-    --accent: #0a6b78; --panel: #f6f6f9;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0a0a0d; --fg: #ececf1; --dim: #9a9aa4; --rule: #26262e;
-      --accent: #40f2ff; --panel: #15151b;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; padding: 2.5rem 1.25rem 5rem;
-    background: var(--bg); color: var(--fg);
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif;
-  }
-  main { max-width: 46rem; margin: 0 auto; }
-  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
-  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; padding-top: 1.25rem;
-       border-top: 1px solid var(--rule); }
-  h3 { font-size: 1.02rem; margin: 1.75rem 0 .5rem; }
-  .updated { color: var(--dim); font-size: .92rem; margin: 0 0 2rem; }
-  a { color: var(--accent); overflow-wrap: anywhere; }
-  ul { padding-left: 1.25rem; }
-  li { margin: .4rem 0; }
-  code { background: var(--panel); padding: .12em .4em; border-radius: 4px;
-         font-size: .9em; }
-  .lead { background: var(--panel); border-radius: 10px; padding: 1rem 1.25rem;
-          margin: 0 0 1.5rem; }
-  .lead ul { margin: .5rem 0 0; }
-  .tablewrap { overflow-x: auto; margin: 1rem 0; }
-  table { border-collapse: collapse; width: 100%; min-width: 30rem;
-          font-size: .95rem; }
-  th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--rule);
-           vertical-align: top; }
-  th { font-weight: 600; }
-  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
-           color: var(--dim); font-size: .9rem; }
-</style>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <main>
 
+<header class="studio">
+  <a href="index.html" aria-label="Enigvra Studio — all privacy policies">
+    <picture>
+      <source srcset="assets/enigvra-logo-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="assets/enigvra-logo-light.svg" alt="Enigvra Studio" width="186" height="44">
+    </picture>
+  </a>
+  <a class="all" href="index.html">All apps</a>
+</header>
+
 <h1>Privacy Policy — SparkLogic</h1>
-<p class="updated">Last updated: 15 August 2026 · Package
+<p class="updated">Last updated: 25 August 2026 · Package
 <code>com.bilalsafdar.sparklogic</code></p>
 
 <p>SparkLogic (“the app”, “we”, “us”) is a puzzle game for Android published by
-Bilal Safdar. This policy explains what information the app collects, why, who
+<strong>Enigvra Studio</strong>, the trading name of Bilal Safdar. This policy explains what information the app collects, why, who
 it is shared with, and what control you have over it.</p>
 
 <div class="lead">
@@ -65,11 +37,21 @@ it is shared with, and what control you have over it.</p>
       your name, email address, phone number or any other personal detail.</li>
     <li>Your game progress is stored <strong>only on your device</strong>.</li>
     <li>The app uses <strong>Google Firebase Analytics</strong> to understand how
-      the game is played, and <strong>Google AdMob</strong> to show two banner
-      advertisements.</li>
-    <li>Those two Google services collect <strong>device identifiers</strong>,
-      including your device’s advertising ID, and technical information about
-      your device.</li>
+      the game is played. <strong>You can switch it off, anywhere in the
+      world</strong>, in <strong>Settings → ABOUT &amp; LEGAL</strong>; in the EEA, the UK
+      and Switzerland it stays off until you say yes.</li>
+    <li><strong>This build shows one banner advertisement</strong> on menu
+      screens, served by Google AdMob, which reads your device’s advertising
+      ID. You can turn personalisation off, and the AD-FREE FOREVER purchase
+      removes the banner entirely. <strong>No advertisement is shown at
+      all</strong> in the EEA, the UK, Switzerland, Russia or Belarus.</li>
+    <li><strong>Nothing about you is published to other players.</strong> The
+      global ladder — the one feature that ever did — is switched off in this
+      version.</li>
+    <li>Once per launch the app asks our database whether this installation has
+      a temporary <strong>support unlock</strong>, sending only the six-character
+      support code shown in <strong>Settings → ABOUT &amp; LEGAL →
+      DIAGNOSTICS</strong>. It identifies the installation, not you.</li>
     <li>The app requests <strong>no sensitive permissions</strong>: no location,
       camera, microphone, contacts, photos, files or calendar.</li>
   </ul>
@@ -91,9 +73,6 @@ backup, so it does not leave your device at all. Uninstalling the app deletes
 it.</p>
 
 <h3>3. Information collected automatically by Google services</h3>
-<p>The app includes two Google software development kits (SDKs). Each collects
-data according to Google’s own policies, not ours.</p>
-
 <p><strong>Google Firebase Analytics</strong> — used to understand how the game
 is played, so we can tell which levels are too hard, where players stop, and
 whether features are used. It records events such as: starting and finishing a
@@ -104,13 +83,39 @@ spending in-game currency, making a purchase, and technical failures.</p>
 identifier, your device model, operating system version, language, and an
 approximate region derived from your IP address.</p>
 
-<p><strong>Google AdMob</strong> — used to show advertisements. AdMob collects
-your device’s advertising ID and technical information about your device in
-order to select and measure ads.</p>
+<p><strong>You can turn all of it off.</strong> <em>Settings → ABOUT &amp; LEGAL →
+ANALYTICS</em> stops it everywhere in the world, immediately, and the game plays
+exactly the same afterwards. In the European Economic Area, the United Kingdom
+and Switzerland it is <strong>off until you say yes</strong>: the app asks once,
+on first launch, treats no answer as a no, and lets you change your mind at any
+time in the same place.</p>
 
-<p><strong>None of the events the app sends contain your name, email address, or
-any text you have written</strong>, because the app never collects any of those
-things.</p>
+<p><strong>Analytics does not collect your advertising identifier.</strong>
+Firebase’s advertising-ID collection is switched off in the app’s own manifest
+rather than merely not used, so the identifier AdMob reads to serve a banner (see
+<em>Advertising</em> below) is never joined to your gameplay statistics. They are
+two separate things and the app keeps them that way.</p>
+
+<h3>4. The global ladder — switched off in this version</h3>
+<p>Earlier builds offered an opt-in worldwide high-score list. <strong>It is
+switched off in the version you are running</strong>: no handle, no score and no
+sign-in identifier is created or sent, and nothing about your play is shown to
+any other player. If a future version brings it back, this policy will be
+updated before that version ships.</p>
+
+<h3>5. The support unlock check</h3>
+<p>Once per launch, the app asks our Firebase database a single question: whether
+this installation has been granted a temporary support unlock. It sends only the
+<strong>six-character support code</strong> shown in <em>Settings → ABOUT &amp;
+LEGAL → DIAGNOSTICS</em>. That code is generated at random on this device, it
+identifies the installation rather than you, and on its own it does nothing at
+all. Your IP address is visible to Google when the app makes this request, as it
+would be for any web request.</p>
+<p>This check runs whether or not analytics is switched on, because it is what
+lets us help a specific person who has written in for support.</p>
+
+<p><strong>Nothing the app sends contains your name, email address, or any text
+you have written</strong>, because the app never collects any of those things.</p>
 
 <h2>How the information is used</h2>
 <div class="tablewrap">
@@ -120,8 +125,8 @@ things.</p>
       <td>App activity events, device and OS information</td></tr>
   <tr><td>Diagnosing crashes and technical faults</td>
       <td>Diagnostic information, device and OS information</td></tr>
-  <tr><td>Showing advertisements</td>
-      <td>Advertising ID, device information</td></tr>
+  <tr><td>Answering a support unlock request</td>
+      <td>Generated handle, lifetime energy, anonymous install id</td></tr>
   <tr><td>Delivering and verifying in-app purchases</td>
       <td>Purchase information handled by Google Play</td></tr>
 </table>
@@ -131,16 +136,36 @@ ourselves, and we do not receive any personally identifying information about
 you from Google.</p>
 
 <h2>Advertising</h2>
-<p>SparkLogic shows <strong>two banner advertisements</strong>: one on the home
-screen and one on the shop screen. There are no full-screen adverts, no video
-adverts, and no adverts on any puzzle board. <strong>No part of the game is
-locked behind watching an advert.</strong></p>
-<p>Advertisements are provided by Google AdMob. Google may use your device’s
-advertising ID to show adverts that are relevant to you.</p>
-<p><strong>You can control this on your device.</strong> In Android
-<strong>Settings ▸ Privacy ▸ Ads</strong>, you can delete your advertising ID or
-opt out of personalised advertising. Doing so does not stop adverts appearing,
-but they will no longer be personalised.</p>
+<p><strong>This build shows one banner advertisement</strong>, on the home
+screen, the Vault and the Store. Never on a puzzle board, never between you and a
+level, never something you have to watch, and <strong>nothing playable is ever
+locked behind one</strong>. There are no interstitials and no rewarded
+advertisements.</p>
+<p>Advertisements are served by <strong>Google AdMob</strong>, which reads your
+device’s <strong>advertising ID</strong> to do so. That identifier is resettable
+at any time in Android’s own settings, and it is never joined to the gameplay
+statistics described above.</p>
+<p><strong>Where no advertisement is shown at all:</strong></p>
+<ul>
+  <li>the <strong>EEA, the United Kingdom and Switzerland</strong> — serving
+    advertisements there requires a Google-certified consent management platform,
+    and this build does not carry one, so it requests no advertisement and reads
+    no advertising identifier;</li>
+  <li><strong>Russia and Belarus</strong>, where Google does not serve
+    advertisements to users;</li>
+  <li>to any player Google Play tells the app is a <strong>child</strong>,
+    anywhere in the world.</li>
+</ul>
+<p><strong>Your controls:</strong></p>
+<ul>
+  <li><em>Settings → ABOUT &amp; LEGAL → ADS</em> switches
+    <strong>personalisation</strong> off — you still see a banner, but it is
+    contextual rather than targeted;</li>
+  <li><strong>AD-FREE FOREVER</strong>, a one-time purchase in the Store, removes
+    the banner permanently;</li>
+  <li>no advertisement is ever personalised for a player under 18, or where the
+    store gives no age signal in a region that expects one.</li>
+</ul>
 <p>Google’s own policy on how it uses data from apps that use its services:
 <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
 
@@ -154,14 +179,13 @@ the app whether a purchase succeeded.</p>
 currency can be earned by playing.</p>
 
 <h2>Who your information is shared with</h2>
-<p>The app itself sends data to only two third parties, both operated by
-Google:</p>
+<p>The app itself sends data only to services operated by Google:</p>
 <div class="tablewrap">
 <table>
   <tr><th>Service</th><th>Purpose</th><th>Their privacy policy</th></tr>
   <tr><td>Google Firebase Analytics</td><td>Analytics and diagnostics</td>
       <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
-  <tr><td>Google AdMob</td><td>Advertising</td>
+  <tr><td>Google Firebase (Realtime Database)</td><td>The support unlock check</td>
       <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
   <tr><td>Google Play Billing</td><td>Processing purchases</td>
       <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
@@ -187,32 +211,44 @@ information from anyone.</p>
       <td>Haptic feedback when you tap a component. Can be switched off in the
           app’s Settings.</td></tr>
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
-      <td>Required by the Google advertising and analytics SDKs. The game itself
-          is fully playable offline.</td></tr>
-  <tr><td><code>AD_ID</code></td>
-      <td>Access to the device advertising ID, required by AdMob.</td></tr>
+      <td>Analytics and the support unlock check. Every puzzle in the game is
+          generated on your device and plays fully offline.</td></tr>
 </table>
 </div>
 <p>The app requests <strong>no</strong> location, camera, microphone, contacts,
-storage, photo or calendar permissions.</p>
+storage, photo or calendar permissions. It does request
+<code>com.google.android.gms.permission.AD_ID</code>, because Google AdMob reads
+your device’s advertising ID to serve the banner — see <em>Advertising</em> above
+for where no advertisement is served, and how to switch personalisation off or
+remove the banner entirely.</p>
 
 <h2>Your choices and your rights</h2>
 <ul>
-  <li><strong>Delete your game data.</strong> Open <strong>Settings ▸ RESET
-    PROGRESS</strong> inside the app to erase all local progress. Uninstalling
-    the app also removes it completely.</li>
-  <li><strong>Limit ad tracking.</strong> Use <strong>Android Settings ▸ Privacy
-    ▸ Ads</strong> to reset or delete your advertising ID, or to opt out of
-    personalised advertising.</li>
+  <li><strong>Switch analytics off</strong>, anywhere in the world:
+    <em>Settings → ABOUT &amp; LEGAL → ANALYTICS</em>. It takes effect immediately.</li>
+  <li><strong>Withdraw consent</strong> if you gave it: <em>Settings → ABOUT &amp; LEGAL → ADS →
+    PRIVACY CHOICES</em>. Withdrawing is exactly as easy as giving, which is the
+    point.</li>
+  <li><strong>Delete everything</strong>: <em>Settings → ABOUT &amp; LEGAL →
+    SAVE DATA &amp; RESET PROGRESS</em> is this game’s <em>delete my data</em>.
+    It erases the local save file, the analytics identifier the events were sent
+    under, and your stored privacy answers. Uninstalling removes the local half
+    as well.</li>
+  <li><strong>Read the rules that apply where you are</strong>: <em>Settings →
+    ABOUT &amp; LEGAL → TERMS &amp; LEGAL</em> shows the statutory notices
+    for your own country, and lets you read every other region’s.</li>
   <li><strong>Ask us about your data.</strong> There is no account to look up, so
-    we hold nothing that identifies you personally. If you are in a region with
-    data protection rights (such as the UK/EU under GDPR, or California under
-    the CCPA) and wish to make a request about data held by Google’s services,
-    contact us and we will help where we can.</li>
+    there is nothing that identifies you personally for us to retrieve. If you
+    are in a region with data protection rights — the EEA and UK under the GDPR,
+    Switzerland under the FADP, Brazil under the LGPD, California and other US
+    states, Canada under PIPEDA — write to the address below and we will help
+    where we can.</li>
 </ul>
-<p>Because the app has no accounts, we cannot identify an individual user’s
-data, and there is therefore nothing for us to retrieve or delete on our
-side.</p>
+<p><strong>Where to complain.</strong> EEA: your national data protection
+authority (<a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">the
+list is published by the EDPB</a>). UK: the
+<a href="https://ico.org.uk/make-a-complaint/">ICO</a>. Switzerland: the FDPIC.
+Brazil: the ANPD. Canada: the Office of the Privacy Commissioner.</p>
 
 <h2>Data retention</h2>
 <p>We retain no data ourselves. Analytics and advertising data is retained by
@@ -229,13 +265,29 @@ your device cannot read.</p>
 URL and the “Last updated” date at the top will change. Material changes will
 also be noted in the app’s release notes.</p>
 
+<h2 id="delete-your-data">Delete your data</h2>
+
+<div class="delete">
+<p><strong>In the app:</strong> open <em>Settings → About &amp; legal → Privacy policy</em> and tap <strong>Delete my data</strong> (the same wipe is <em>Reset progress</em> under <em>Save data &amp; reset progress</em>). It erases your save file and settings, throws away the anonymous analytics identifier and any leaderboard entry, and resets your advertising consent, on the spot.</p>
+<p><strong>What it cannot delete:</strong> purchases (AD-FREE FOREVER, the Supporter Pack) are held by Google Play against your Google account and stay yours. Analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
+<p><strong>By email:</strong> if you cannot open the app, or you want Google's
+analytics copy removed as well, email
+<a href="mailto:bilalsafdar3014@gmail.com?subject=SparkLogic%20data%20deletion">bilalsafdar3014@gmail.com</a>
+with the subject “SparkLogic data deletion”. We answer within 30 days. We will never
+ask for a password.</p>
+<p><strong>Uninstalling</strong> the app also deletes everything it stored on your
+device.</p>
+</div>
+
 <h2>Contact</h2>
 <p>Questions about this policy, or about privacy in SparkLogic:</p>
 <p><strong>Bilal Safdar</strong> —
 <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a></p>
 
 <footer>
-SparkLogic · <code>com.bilalsafdar.sparklogic</code> · Last updated 15 August 2026
+<p>SparkLogic · <code>com.bilalsafdar.sparklogic</code> · This policy covers the Android application only.</p>
+<p>SparkLogic is developed and published by <strong>Enigvra Studio</strong>, the trading name of Bilal Safdar.</p>
+<p>© 2026 Enigvra Studio. All rights reserved.</p>
 </footer>
 
 </main>
