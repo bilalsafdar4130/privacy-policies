@@ -35,7 +35,7 @@ control you have over it.</p>
   <ul>
     <li>There is <strong>no account</strong>. You never give us a name, an email address or a phone number, because there is nowhere to type one.</li>
     <li>The app shows <strong>one banner advertisement</strong> on the menu screens (never inside a lab), served by Google AdMob. There are no full-screen or video adverts.</li>
-    <li>There are <strong>no in-app purchases</strong>. No real money changes hands anywhere in the app.</li>
+    <li>In-app purchases are <strong>optional</strong>: <em>AD-FREE WORKSHOP</em> and <em>PIONEER SUPPORTER</em>, each a single, one-time payment through Google Play Billing. Nothing that teaches is ever for sale: every lesson, lab and hint is free.</li>
     <li>The app collects <strong>anonymous usage statistics</strong> through Google Firebase Analytics.</li>
     <li>In the EEA, the UK and Switzerland, Google’s consent form asks you <strong>before</strong> advertising or statistics are switched on.</li>
     <li>Your saved progress lives <strong>on your device</strong>. It is never uploaded.</li>
@@ -82,22 +82,50 @@ general-audience rating.</p>
 
 <p>No name, email address, phone number, postal address, contacts, calendar,
 photos, files, microphone, camera, precise location, browsing or search history,
-list of installed apps, health or fitness data, or payment information. There is
-no chat, no user-generated content and no way for one player to see another.</p>
+list of installed apps, health or fitness data, or payment information — Google
+Play handles payment details for every purchase in the app, and this app is never
+told them. There is no chat, no user-generated content and no way for one player
+to see another.</p>
+
+<h2>In-app purchases</h2>
+
+<p>Every purchase is optional and is processed entirely by
+<strong>Google Play Billing</strong>. This app never sees your card details,
+billing address or any other payment information — only which product was bought
+and whether the purchase succeeded.</p>
+
+<ul>
+  <li><strong>AD-FREE WORKSHOP</strong> — a single, one-time payment (not a
+  subscription) that removes the banner advertisement for good. Nothing playable
+  is locked behind it.</li>
+  <li><strong>PIONEER SUPPORTER</strong> — a single, one-time payment that removes
+  the banner advertisement too and adds a SUPPORTER plate to your Workshop
+  screen.</li>
+</ul>
+
+<p>A purchase belongs to your Google account: if you reinstall the app or change
+devices, Google Play remembers it and the app restores it automatically the next
+time it starts, or when you tap <em>Restore purchases</em> in the Store.</p>
+
+<p>When a purchase completes, the app records a <code>purchase</code> event in
+Firebase Analytics with the product and the price Google Play showed you, so we
+can tell which products people find worth buying. It is not linked to your name,
+your Google account or your payment details.</p>
 
 <h2>Why we collect it</h2>
 
 <ul>
   <li><strong>To fix things.</strong> The app reports when something fails; those events should be rare, and are the only way we find out.</li>
   <li><strong>To decide what to build.</strong> Counting which parts of the app people reach tells us what is working.</li>
-  <li><strong>To pay for the app.</strong> The banner advertisement is how the app earns money, so that it can be free to play.</li>
+  <li><strong>To pay for the app.</strong> The banner advertisement, and the optional purchases, are how the app earns money, so that it can be free to play.</li>
+  <li><strong>To complete a purchase</strong> where you make one.</li>
   <li>Nothing is used to make any decision about you as an individual.</li>
 </ul>
 
 <h2>Who it is shared with</h2>
 
-<p><strong>Google</strong>, as the operator of Firebase Analytics and AdMob,
-processes this data. We do not sell it, and we do not share it with anyone else
+<p><strong>Google</strong>, as the operator of Firebase Analytics, AdMob and
+Google Play Billing (purchases), processes this data. We do not sell it, and we do not share it with anyone else
 — no advertising networks other than Google AdMob and AppLovin (see
 <em>Advertising partners</em>), no data brokers and no other analytics providers.</p>
 
@@ -148,7 +176,7 @@ off.</p>
 <h2>Security</h2>
 
 <p>Everything the app sends is encrypted in transit (HTTPS, by the Firebase and
-AdMob SDKs). The app requests only these permissions: <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics and advertising SDKs can reach the network), <code>VIBRATE</code> (haptic feedback) and <code>AD_ID</code> (the advertising ID, for the banner advertisement). It requests
+AdMob SDKs). The app requests only these permissions: <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics and advertising SDKs can reach the network), <code>VIBRATE</code> (haptic feedback), <code>AD_ID</code> (the advertising ID, for the banner advertisement) and <code>com.android.vending.BILLING</code> (Google Play purchases in the Store). It requests
 nothing else.</p>
 
 <h2>Data retention</h2>
@@ -183,7 +211,7 @@ date at the top changes with it.</p>
 
 <div class="delete">
 <p><strong>In the app:</strong> open <em>Settings → Privacy &amp; data</em> and tap <strong>Delete my data</strong>. It erases your progress and settings, resets the anonymous analytics identifier, on the spot.</p>
-<p><strong>What it cannot delete:</strong> analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
+<p><strong>What it cannot delete:</strong> purchases (AD-FREE WORKSHOP, PIONEER SUPPORTER) are held by Google Play against your Google account and stay yours. Analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
 <p><strong>By email:</strong> if you cannot open the app, or you want Google's
 analytics copy removed as well, email
 <a href="mailto:bilalsafdar3014@gmail.com?subject=Pipeline%20Pioneers%20data%20deletion">bilalsafdar3014@gmail.com</a>
