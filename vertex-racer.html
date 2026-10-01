@@ -23,7 +23,7 @@
 </header>
 
 <h1>Privacy Policy — Vertex Racer</h1>
-<p class="updated">Last updated: 24 September 2026 · Package
+<p class="updated">Last updated: 1 October 2026 · Package
 <code>com.brc.racing</code></p>
 
 <p><strong>Vertex Racer</strong> (“the app”, “we”, “us”) is a throttle-only driving game for Android, developed and published by <strong>Enigvra Studio</strong>. This policy
@@ -35,7 +35,7 @@ control you have over it.</p>
   <ul>
     <li>There is <strong>no account</strong>. You never give us a name, an email address or a phone number, because there is nowhere to type one.</li>
     <li>The app shows <strong>one banner advertisement</strong> on the menu screens (never while you are driving), served by Google AdMob. There are no full-screen or video adverts.</li>
-    <li>There are <strong>no in-app purchases</strong>. No real money changes hands anywhere in the app.</li>
+    <li>Any in-app purchase is <strong>optional</strong> — coin packs and a one-time <em>Remove ads</em> — and is paid through Google Play. We never see your payment details.</li>
     <li>The app collects <strong>anonymous usage statistics</strong> through Google Firebase Analytics.</li>
     <li>In the EEA, the UK and Switzerland, Google’s consent form asks you <strong>before</strong> advertising or statistics are switched on.</li>
     <li>Your saved progress lives <strong>on your device</strong>. It is never uploaded.</li>
@@ -46,7 +46,7 @@ control you have over it.</p>
 
 <h3>Anonymous usage statistics (Firebase Analytics)</h3>
 
-<p>The app reports events describing what happens in it — a race started, a run finished, a car chosen, a setting changed, or an error — so
+<p>The app reports events describing what happens in it — a race started, a run finished, a car chosen, a setting changed, a purchase completed, or an error — so
 that we can tell which parts people enjoy and which parts are broken.</p>
 
 <div class="tablewrap">
@@ -77,11 +77,30 @@ your advertising ID.</p>
 advertising that is relevant to you. Advertising content is limited to a
 general-audience rating.</p>
 
+<h3>In-app purchases (Google Play Billing)</h3>
+
+<p>Where the store is offered, purchases are optional and are processed entirely by
+<strong>Google Play Billing</strong>:</p>
+<ul>
+  <li><strong>Coin packs</strong> — one-off purchases that add in-game coins to
+  your save. Coins are not money, cannot be cashed out or transferred, and live
+  on your device like coins earned by driving.</li>
+  <li><strong>Remove ads</strong> — a single, one-time payment (not a
+  subscription) that switches the banner advertisement off for good. Google Play
+  remembers it, so it comes back if you reinstall on the same Google account.</li>
+</ul>
+<p>The app never sees your card details, billing address or any other payment
+information — only which product was bought and whether the purchase succeeded.
+A completed purchase is also recorded as a <code>purchase</code> event in Firebase
+Analytics (the product and the price Google Play showed you), not linked to your
+name, Google account or payment details.</p>
+
 <h3>What the app does <em>not</em> collect</h3>
 
 <p>No name, email address, phone number, postal address, contacts, calendar,
 photos, files, microphone, camera, precise location, browsing or search history,
-list of installed apps, health or fitness data, or payment information. There is
+list of installed apps, health or fitness data, or payment information — Google
+Play handles payment details for any purchase, and this app is never told them. There is
 no chat, no user-generated content and no way for one player to see another.</p>
 
 <h2>Why we collect it</h2>
@@ -89,14 +108,15 @@ no chat, no user-generated content and no way for one player to see another.</p>
 <ul>
   <li><strong>To fix things.</strong> The app reports when something fails; those events should be rare, and are the only way we find out.</li>
   <li><strong>To decide what to build.</strong> Counting which parts of the app people reach tells us what is working.</li>
-  <li><strong>To pay for the app.</strong> The banner advertisement is how the app earns money, so that it can be free to play.</li>
+  <li><strong>To pay for the app.</strong> The banner advertisement and the optional purchases are how the app earns money, so that it can be free to play.</li>
+  <li><strong>To deliver what you buy.</strong> A purchase is checked with Google Play before any coins or Remove ads are granted.</li>
   <li>Nothing is used to make any decision about you as an individual.</li>
 </ul>
 
 <h2>Who it is shared with</h2>
 
-<p><strong>Google</strong>, as the operator of Firebase Analytics and AdMob,
-processes this data. We do not sell it, and we do not share it with anyone else
+<p><strong>Google</strong>, as the operator of Firebase Analytics, AdMob and
+Google Play Billing, processes this data. We do not sell it, and we do not share it with anyone else
 — no other advertising networks, data brokers or analytics providers.</p>
 
 <ul>
@@ -146,7 +166,7 @@ off.</p>
 <h2>Security</h2>
 
 <p>Everything the app sends is encrypted in transit (HTTPS, by the Firebase and
-AdMob SDKs). The app requests only these permissions: <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics and advertising SDKs can reach the network), <code>ACCESS_WIFI_STATE</code>, <code>VIBRATE</code> (haptic feedback) and <code>AD_ID</code> (the advertising ID, for the banner advertisement). It requests
+AdMob SDKs). The app requests only these permissions: <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics and advertising SDKs can reach the network), <code>ACCESS_WIFI_STATE</code>, <code>VIBRATE</code> (haptic feedback), <code>AD_ID</code> (the advertising ID, for the banner advertisement) and, in builds that offer the store, <code>com.android.vending.BILLING</code> (Google Play purchases). It requests
 nothing else.</p>
 
 <h2>Data retention</h2>
@@ -164,7 +184,7 @@ date at the top changes with it.</p>
 
 <div class="delete">
 <p><strong>In the app:</strong> open <em>Settings → Privacy &amp; data</em> and tap <strong>Delete my data</strong>. It erases your save (coins, cars, best distances), your ghost laps and your driver card, resets the anonymous analytics identifier, and restarts the game fresh.</p>
-<p><strong>What it cannot delete:</strong> analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
+<p><strong>What it cannot delete:</strong> a Remove ads purchase is held by Google Play against your Google account and stays yours (coins from coin packs are part of your save and are erased with it). Analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
 <p><strong>By email:</strong> if you cannot open the app, or you want Google's
 analytics copy removed as well, email
 <a href="mailto:bilalsafdar3014@gmail.com?subject=Vertex%20Racer%20data%20deletion">bilalsafdar3014@gmail.com</a>
