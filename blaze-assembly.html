@@ -195,11 +195,14 @@ holds nothing that identifies any individual.</p>
 
 <h2>Security</h2>
 
-<p>Everything the app sends is encrypted in transit (HTTPS, by the Firebase SDK).
-The app requests exactly one permission that touches the network —
-<code>INTERNET</code>, which the analytics SDK needs to upload its batched
-events — and <code>VIBRATE</code>, for the haptic tick when a sparkler is
-planted. It requests nothing else.</p>
+<p>Everything the app sends is encrypted in transit (HTTPS, by the Firebase,
+AdMob and Google Play Billing SDKs). The app requests these permissions:
+<code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics,
+advertising and purchase SDKs can reach the network), <code>VIBRATE</code> (the
+haptic tick when a sparkler is planted), <code>AD_ID</code> (the advertising ID,
+for advertising) and <code>com.android.vending.BILLING</code> (Google Play
+purchases). It requests no location, camera, microphone, contacts, storage,
+photo or calendar permission.</p>
 
 <h2>Data retention</h2>
 
