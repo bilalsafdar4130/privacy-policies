@@ -23,7 +23,7 @@
 </header>
 
 <h1>Privacy Policy — Blaze Assembly</h1>
-<p class="updated">Last updated: 8 September 2026 · Package
+<p class="updated">Last updated: 1 October 2026 · Package
 <code>com.blazeassembly.app</code></p>
 
 <p><strong>Blaze Assembly</strong> (“the app”, “we”, “us”) is an idle
@@ -35,7 +35,7 @@ collects, why, who it is shared with, and what control you have over it.</p>
   <ul>
     <li>There is <strong>no account</strong>. You never give us a name, an email address or a phone number, because there is nowhere to type one.</li>
     <li>The app shows <strong>advertising</strong>, served by Google AdMob — a banner, and occasionally a full-screen or rewarded video ad. It carries no certified consent platform yet, so no ad is shown in the EEA, the UK or Switzerland.</li>
-    <li>There is <strong>one in-app purchase</strong>, <em>Remove ads</em> — a single payment, once, through Google Play Billing. Nothing playable is ever locked behind it.</li>
+    <li>In-app purchases are <strong>optional</strong>: <em>Remove ads</em>, a single payment, once, and three <em>coin packs</em>, all through Google Play Billing. Nothing playable is ever locked behind them — everything coins buy can also be earned by playing.</li>
     <li>The app collects <strong>anonymous gameplay statistics</strong> through Google Firebase Analytics, and nothing else beyond what serving an advertisement or processing a purchase requires.</li>
     <li>You can <strong>switch analytics off</strong> at any time, and in the EEA, the UK and Switzerland it is off until you say otherwise.</li>
     <li>Your saved progress lives <strong>on your device</strong>. It is never uploaded.</li>
@@ -73,7 +73,7 @@ is published in the source repository as
 photos, files, microphone, camera, precise or approximate location,
 browsing or search history, list of installed apps, health or
 fitness data, or payment information — Google Play handles payment details for
-the one purchase in the app, and this app is never told them. There is no chat,
+every purchase in the app, and this app is never told them. There is no chat,
 no user-generated content and no way for one player to see another.</p>
 
 <h2>Advertising</h2>
@@ -98,14 +98,27 @@ device, for good.</p>
 
 <h2>In-app purchases</h2>
 
-<p>There is one purchase in the app: <strong>Remove ads</strong>, a single,
-one-time payment (not a subscription) that switches advertising off on that
-device for good. It is processed entirely by <strong>Google Play Billing</strong>;
-this app never sees your card details, billing address or any other payment
-information, only whether the purchase succeeded. Nothing playable is ever
-locked behind it — it removes a strip of screen, and that is all it claims to
-do. If you buy it and change devices, Play remembers the purchase and it is
-restored automatically the next time the app checks.</p>
+<p>Every purchase is optional and is processed entirely by
+<strong>Google Play Billing</strong>. This app never sees your card details,
+billing address or any other payment information — only which product was bought
+and whether the purchase succeeded.</p>
+
+<ul>
+  <li><strong>Remove ads</strong> — a single, one-time payment (not a
+  subscription) that switches advertising off for good. Nothing playable is
+  locked behind it: it removes a strip of screen, and that is all it claims to
+  do. If you change devices, Play remembers the purchase and it is restored
+  automatically the next time the app checks.</li>
+  <li><strong>Coin packs</strong> (Handful, Sackful and Cartload) — one-off
+  purchases that add in-game coins to your save. Coins are not money: they cannot
+  be cashed out or transferred, and they live in the save file on your device
+  like coins you earn by playing. Everything they buy can also be earned.</li>
+</ul>
+
+<p>When a purchase completes, the app records a <code>purchase</code> event in
+Firebase Analytics with the product and the price Google Play showed you, so we
+can tell which products people find worth buying. It is not linked to your name,
+your Google account or your payment details.</p>
 
 <h2>Why we collect it</h2>
 
@@ -120,7 +133,7 @@ restored automatically the next time the app checks.</p>
 
 <p><strong>Google</strong> processes data on our behalf, as the operator of
 Firebase Analytics (gameplay statistics), Google AdMob (advertising), and
-Google Play Billing (the one purchase). It is not sold, and it is not shared
+Google Play Billing (purchases). It is not sold, and it is not shared
 with anyone else — no other advertising networks, no data brokers, no other
 analytics providers.</p>
 
@@ -202,7 +215,7 @@ asked again rather than an older answer being reused.</p>
 
 <div class="delete">
 <p><strong>In the app:</strong> open <em>Settings → About and legal → Privacy policy</em> and tap <strong>Delete all my data</strong>. It erases your progress and coins, throws away the anonymous analytics identifier and resets your privacy and advertising choices, on the spot. (<em>Delete my data</em> further down the same screen removes only the analytics identifier and keeps your progress.)</p>
-<p><strong>What it cannot delete:</strong> the Remove ads purchase is held by Google Play against your Google account and stays yours. Analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
+<p><strong>What it cannot delete:</strong> the Remove ads purchase is held by Google Play against your Google account and stays yours. Coins from coin packs are part of your progress and are erased with it; Google Play keeps its own record of the payment, which you can see in your Play account. Analytics already sent is deleted by Google after 14 months, or earlier on request by email.</p>
 <p><strong>By email:</strong> if you cannot open the app, or you want Google's
 analytics copy removed as well, email
 <a href="mailto:bilalsafdar3014@gmail.com?subject=Blaze%20Assembly%20data%20deletion">bilalsafdar3014@gmail.com</a>
