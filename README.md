@@ -12,6 +12,10 @@ https://bilalsafdar4130.github.io/privacy-policies/
 | Vertex Racer | `vertex-racer.html` |
 | Pipeline Pioneers | `pipeline-pioneers.html` |
 | Pitch Alchemy | `pitch-alchemy.html` |
+| Gate & Go | `gate-and-go.html` |
+| Last Outpost | `last-outpost.html` |
+| Cozy Rooms | `cozy-rooms.html` |
+| Tiny Canvas | `tiny-canvas.html` |
 | ZB Chat | `zb-chat.html` |
 | BunyadIlm | `bunyadilm.html` |
 

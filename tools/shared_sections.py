@@ -87,6 +87,30 @@ APPS = {
         "delete_path": "Settings → Privacy → Delete my data",
         "children": "all",
     },
+    "gate-and-go": {
+        "name": "Gate &amp; Go", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "last-outpost": {
+        "name": "Last Outpost", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "cozy-rooms": {
+        "name": "Cozy Rooms", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "tiny-canvas": {
+        "name": "Tiny Canvas", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
     "zb-chat": {
         "name": "ZB Chat", "ads": "future", "analytics": False, "purchases": False,
         "ad_free": "", "ad_settings": "", "analytics_off": "",
