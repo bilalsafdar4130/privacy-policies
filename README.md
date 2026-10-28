@@ -16,6 +16,11 @@ https://bilalsafdar4130.github.io/privacy-policies/
 | Last Outpost | `last-outpost.html` |
 | Cozy Rooms | `cozy-rooms.html` |
 | Tiny Canvas | `tiny-canvas.html` |
+| Unjam Lot | `unjam-lot.html` |
+| Place It Right | `place-it-right.html` |
+| Cut & Drop | `cut-and-drop.html` |
+| Studio Tycoon | `studio-tycoon.html` |
+| Stickbot Brawl | `stickbot-brawl.html` |
 | ZB Chat | `zb-chat.html` |
 | BunyadIlm | `bunyadilm.html` |
 

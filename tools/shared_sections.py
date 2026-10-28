@@ -111,6 +111,36 @@ APPS = {
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
+    "unjam-lot": {
+        "name": "Unjam Lot", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "place-it-right": {
+        "name": "Place It Right", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "cut-and-drop": {
+        "name": "Cut & Drop", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "studio-tycoon": {
+        "name": "Studio Tycoon", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "stickbot-brawl": {
+        "name": "Stickbot Brawl", "ads": "future", "analytics": False, "purchases": False,
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
     "zb-chat": {
         "name": "ZB Chat", "ads": "future", "analytics": False, "purchases": False,
         "ad_free": "", "ad_settings": "", "analytics_off": "",
