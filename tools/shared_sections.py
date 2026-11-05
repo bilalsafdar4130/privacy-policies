@@ -47,6 +47,8 @@ EMAIL = "bilalsafdar3014@gmail.com"
 #   analytics_off  where analytics is switched off in the app, or ""
 #   delete_path    where Delete my data is
 #   children       "13+" (not directed at under-13s) or "all" (all ages)
+#   updated        optional: this page's own "Last updated" date, when its
+#                  facts changed after UPDATED (other pages keep UPDATED)
 APPS = {
     "spark-logic": {
         "name": "SparkLogic", "ads": "live", "analytics": True, "purchases": True,
@@ -88,55 +90,64 @@ APPS = {
         "children": "all",
     },
     "gate-and-go": {
-        "name": "Gate &amp; Go", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Gate &amp; Go", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "last-outpost": {
-        "name": "Last Outpost", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Last Outpost", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "cozy-rooms": {
-        "name": "Cozy Rooms", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Cozy Rooms", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "tiny-canvas": {
-        "name": "Tiny Canvas", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Tiny Canvas", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "unjam-lot": {
-        "name": "Unjam Lot", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Unjam Lot", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "place-it-right": {
-        "name": "Place It Right", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Place It Right", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "cut-and-drop": {
-        "name": "Cut & Drop", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Cut & Drop", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "studio-tycoon": {
-        "name": "Studio Tycoon", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Studio Tycoon", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
     "stickbot-brawl": {
-        "name": "Stickbot Brawl", "ads": "future", "analytics": False, "purchases": False,
+        "name": "Stickbot Brawl", "ads": "future", "analytics": False, "purchases": True,
+        "updated": "5 November 2026",
         "ad_free": "", "ad_settings": "", "analytics_off": "",
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
@@ -298,11 +309,22 @@ def transfers(app: dict) -> str:
            "AppLovin"]
     if app["purchases"]:
         who.insert(1, "Google Play Billing")
-    scope = (
-        "" if app["ads"] == "live" or app["analytics"] else
-        " This version sends nothing to them; this applies to any version that "
-        "shows advertising."
-    )
+    if app["ads"] == "live" or app["analytics"]:
+        scope = ""
+    elif app["purchases"]:
+        # Sells through Google Play but shows no ads: Billing is live, the ad
+        # partners are not.
+        scope = (
+            " In this version only Google Play Billing receives anything: the "
+            "details of a purchase you choose to make. The advertising partners "
+            "receive nothing; that part applies to any version that shows "
+            "advertising."
+        )
+    else:
+        scope = (
+            " This version sends nothing to them; this applies to any version that "
+            "shows advertising."
+        )
     return f"""<h2 id="transfers">Where data is processed</h2>
 <p>{", ".join(who)} process data on servers in the United States and other
 countries.{scope} Transfers from the EEA, the UK and Switzerland rely on the EU–US
@@ -349,12 +371,22 @@ def us_notice(app: dict) -> str:
     body = "\n".join(
         f"<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td></tr>" for a, b, c, d in rows
     )
-    current = (
-        "<p><strong>This version collects none of these</strong>: it shows no ads"
-        + (" and sends no analytics" if not app["analytics"] else "")
-        + ". The table describes a version that shows ads.</p>\n"
-        if future else ""
-    )
+    if future and app["purchases"]:
+        current = (
+            "<p><strong>In this version only <em>Commercial information</em> "
+            "applies</strong>, and only when you buy something: Google Play Billing "
+            "processes the purchase. The app shows no ads"
+            + (" and sends no analytics" if not app["analytics"] else "")
+            + "; the other rows describe a version that shows ads.</p>\n"
+        )
+    elif future:
+        current = (
+            "<p><strong>This version collects none of these</strong>: it shows no ads"
+            + (" and sends no analytics" if not app["analytics"] else "")
+            + ". The table describes a version that shows ads.</p>\n"
+        )
+    else:
+        current = ""
     opt_out = (
         f"<strong>{app['ad_settings']}</strong> in the app (Google's privacy form), "
         if app["ad_settings"] else
@@ -399,11 +431,19 @@ def retention(app: dict) -> str:
         "deletes it automatically. Aggregate reports with no identifier attached may "
         "be kept longer.</li>\n" if app["analytics"] else ""
     )
+    # Scoped to apps without live ads so the published pages of the live-ad
+    # apps do not change here.
+    purchases = (
+        "<li><strong>Purchases</strong> are kept by Google Play, the seller of "
+        "record, under Google's own retention policy; they stay with your Google "
+        "account so you can restore them.</li>\n"
+        if app["purchases"] and app["ads"] == "future" else ""
+    )
     return f"""<h2 id="data-retention">How long data is kept</h2>
 <ul>
 <li><strong>On your device:</strong> until you delete it in the app or uninstall
   the app.</li>
-{analytics}<li><strong>Advertising data</strong> is kept by each ad network under its own
+{analytics}{purchases}<li><strong>Advertising data</strong> is kept by each ad network under its own
   retention policy. Google, for example, anonymises advertising data in its logs
   by removing part of the IP address after 9 months and cookie information after
   18 months.</li>
@@ -462,6 +502,12 @@ def children(app: dict) -> str:
             "Play's Families programme, as the Children's Online Privacy Protection "
             "Act (COPPA) and Google Play's Families policy require.</p>\n"
         )
+        if app["purchases"]:
+            audience += (
+                "<p>Its optional in-app purchases are made through Google Play, "
+                "whose own purchase authentication and Family Link parental "
+                "approval apply. The app never sees payment details.</p>\n"
+            )
     else:
         audience = (
             f"<p>{name} is not directed at children under 13, and its target "
@@ -532,7 +578,8 @@ def render(slug: str, html: str) -> str:
             raise SystemExit(f"{slug}: missing the shared:{key} markers")
         html = pattern.sub(lambda m: m.group(1) + build(app) + m.group(2), html)
     html = re.sub(
-        r'(<p class="updated">Last updated: )[^·<]+( ·)', rf"\g<1>{UPDATED}\g<2>", html, count=1
+        r'(<p class="updated">Last updated: )[^·<]+( ·)',
+        rf"\g<1>{app.get('updated', UPDATED)}\g<2>", html, count=1
     )
     return html
 
