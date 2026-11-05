@@ -73,5 +73,5 @@ Shared look: `assets/site.css`, the Enigvra Studio logo (`assets/enigvra-logo-*.
 and favicon. The logo is the studio's own artwork; the wordmark is set in
 Orbitron (SIL Open Font License 1.1), converted to outlines.
 
-© 2026 Enigvra Studio. All rights reserved. The policy texts and the Enigvra
-Studio logo are not licensed for reuse.
+© 2026 Bilal Safdar, trading as Enigvra Studio. All rights reserved. The policy
+texts and the Enigvra Studio logo are not licensed for reuse; see `LICENSE`.
