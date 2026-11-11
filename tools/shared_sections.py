@@ -164,6 +164,41 @@ APPS = {
         "delete_path": "Settings → Privacy policy → Delete my data",
         "children": "13+",
     },
+    "block-buster-match": {
+        "name": "Block Buster Match", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "11 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "flag-triple-match": {
+        "name": "Flag Triple Match", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "11 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "ricochet-sniper": {
+        "name": "Ricochet Sniper", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "11 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "ink-line": {
+        "name": "Ink Line", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "11 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
+    "tempo-hare": {
+        "name": "Tempo Hare", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "11 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
 }
 
 GOOGLE_PARTNERS = "https://policies.google.com/technologies/partner-sites"
