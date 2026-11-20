@@ -24,7 +24,7 @@
 </header>
 
 <h1>Privacy Policy — Stickbot Brawl</h1>
-<p class="updated">Last updated: 5 November 2026 · Package
+<p class="updated">Last updated: 20 November 2026 · Package
 <code>com.bilalsafdar.stickbotbrawl</code></p>
 
 
@@ -53,10 +53,13 @@ you have over it.</p>
 </div>
 
 <h2>Permissions</h2>
-<p>The app declares only normal permissions that Android grants without asking: <code>com.android.vending.BILLING</code> (lets the Store ask Google Play to take a payment); <code>ACCESS_NETWORK_STATE</code> (lets the Store notice when your connection comes back). It requests no location, camera, microphone, contacts or files, and no advertising ID (the build removes that permission). The <em>Privacy policy</em> button opens this page in your browser.</p>
+<p>The app declares only normal permissions that Android grants without asking: <code>com.android.vending.BILLING</code> (lets the Store ask Google Play to take a payment); <code>INTERNET</code> (online and LAN play, and the Store); <code>ACCESS_NETWORK_STATE</code> and <code>ACCESS_WIFI_STATE</code> (let the Store and LAN battle notice your connection); <code>CHANGE_WIFI_MULTICAST_STATE</code> (lets LAN battle find a game on the same Wi-Fi). It requests no location, camera, microphone, contacts or files, and no advertising ID (the build removes that permission). The <em>Privacy policy</em> button opens this page in your browser.</p>
+
+<h2 id="online-play">Online play</h2>
+<p>Nothing leaves your phone unless you press <em>PLAY ONLINE</em> (or start a <em>LAN battle</em>, which stays on your own Wi-Fi or hotspot). When you play online, the app connects to our match server (run by Enigvra Studio, reached through Cloudflare's network) and sends only what a match needs: the fighter name you chose in the game (not your real name unless you type it), your fighter's colour, and your moves during the fight. The server gives you a random player id for that session, pairs you with another player and passes the match between your two phones. Your opponent sees your fighter name and colour. The server also sees your IP address, as any internet connection does, and uses it only to limit how many connections one address can open. Nothing is stored: the name, colour and id are kept in memory only while you are connected and are gone when you leave. No account is needed.</p>
 
 <h2>What we never collect</h2>
-<p>No email, no name, no advertising ID, no analytics, no crash reports, no location and no payment information. We receive nothing from the app.</p>
+<p>No email, no account, no advertising ID, no analytics, no crash reports, no location and no payment information. Apart from the online play described above, we receive nothing from the app.</p>
 
 <h2 id="in-app-purchases">In-app purchases</h2>
 <p>Every purchase is optional, is a single one-time payment (there are no subscriptions), and is processed entirely by <strong>Google Play Billing</strong>, under Google's own terms and privacy policy. The app never sees your card details, billing address or any other payment information — only which product was bought and whether the purchase went through. You can find the Store at <em>Garage → Get coins</em>.</p>
