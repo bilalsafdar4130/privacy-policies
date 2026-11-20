@@ -24,7 +24,7 @@
 </header>
 
 <h1>Privacy Policy — Stickbot Brawl</h1>
-<p class="updated">Last updated: 20 November 2026 · Package
+<p class="updated">Last updated: 21 November 2026 · Package
 <code>com.bilalsafdar.stickbotbrawl</code></p>
 
 
@@ -36,7 +36,7 @@ you have over it.</p>
 <div class="lead">
   <strong>The short version.</strong>
   <ul>
-    <li>There are <strong>no accounts, no analytics</strong> and no tracking in the app, and this version shows <strong>no advertising</strong>. Future versions may show ads from Google AdMob or AppLovin — see <a href="#advertising-choices">Advertising and your ad choices</a>.</li>
+    <li>There are <strong>no analytics</strong> and no tracking in the app, and an <strong>account is optional</strong> (only for playing online with friends), and this version shows <strong>no advertising</strong>. Future versions may show ads from Google AdMob or AppLovin — see <a href="#advertising-choices">Advertising and your ad choices</a>.</li>
     <li>Your game progress and settings are stored <strong>only on your device</strong>. The app sends nothing to us.</li>
     <li>In-app purchases are <strong>optional</strong> (<em>Coin Bag</em>, <em>Coin Vault</em>, <em>Every Paint Job</em>) and are processed entirely by <strong>Google Play</strong>; we never see your payment details. Everything for sale can also be earned by playing. See <a href="#in-app-purchases">In-app purchases</a>.</li>
   </ul>
@@ -53,13 +53,17 @@ you have over it.</p>
 </div>
 
 <h2>Permissions</h2>
-<p>The app declares only normal permissions that Android grants without asking: <code>com.android.vending.BILLING</code> (lets the Store ask Google Play to take a payment); <code>INTERNET</code> (online and LAN play, and the Store); <code>ACCESS_NETWORK_STATE</code> and <code>ACCESS_WIFI_STATE</code> (let the Store and LAN battle notice your connection); <code>CHANGE_WIFI_MULTICAST_STATE</code> (lets LAN battle find a game on the same Wi-Fi). It requests no location, camera, microphone, contacts or files, and no advertising ID (the build removes that permission). The <em>Privacy policy</em> button opens this page in your browser.</p>
+<p>The app declares only normal permissions that Android grants without asking: <code>com.android.vending.BILLING</code> (lets the Store ask Google Play to take a payment); <code>INTERNET</code> (online and LAN play, and the Store); <code>ACCESS_NETWORK_STATE</code> and <code>ACCESS_WIFI_STATE</code> (let the Store and LAN battle notice your connection); <code>CHANGE_WIFI_MULTICAST_STATE</code> (lets LAN battle find a game on the same Wi-Fi). <code>RECORD_AUDIO</code> (the microphone, for voice chat in online matches: Android asks you the first time you tap MIC, and it records only while MIC is on); <code>MODIFY_AUDIO_SETTINGS</code> (plays the other player's voice). It requests no location, camera, contacts or files, and no advertising ID (the build removes that permission). The <em>Privacy policy</em> button opens this page in your browser.</p>
 
 <h2 id="online-play">Online play</h2>
-<p>Nothing leaves your phone unless you press <em>PLAY ONLINE</em> (or start a <em>LAN battle</em>, which stays on your own Wi-Fi or hotspot). When you play online, the app connects to our match server (run by Enigvra Studio, reached through Cloudflare's network) and sends only what a match needs: the fighter name you chose in the game (not your real name unless you type it), your fighter's colour, and your moves during the fight. The server gives you a random player id for that session, pairs you with another player and passes the match between your two phones. Your opponent sees your fighter name and colour. The server also sees your IP address, as any internet connection does, and uses it only to limit how many connections one address can open. Your name, colour and IP address are never stored: they are kept in memory only while you are connected and are gone when you leave. The server keeps a short technical log (the random session id and the times you searched, were matched and left, with no name or IP address) for 7 days to keep the service running, then deletes it. No account is needed.</p>
+<p>Nothing leaves your phone unless you open <em>PLAY ONLINE</em> and sign in (or start a <em>LAN battle</em>, which stays on your own Wi-Fi or hotspot). Online, the app connects to our server and sends what a match needs: your moves during the fight and your fighter colour. A match is passed between the two phones; the host phone runs the fight.</p>
+<p><strong>Optional online account.</strong> To play with friends you create an account with a player name and a password (no email, phone number or real name is asked for, and we advise against using your real name). The server stores: the player name, a salted and hashed password (we cannot read it), a random player id, your fighter colour, your friend list and pending friend requests, the number of online matches you played, the time you last signed in, and a hashed sign-in token for each phone you stay signed in on. Your friends and opponents see your player name, id and colour, and whether you are online. Accounts are for players aged 13 and over; everything else in the game works without one.</p>
+<p><strong>Voice chat.</strong> In an online lobby and match there is a MIC button. The microphone is used <strong>only while MIC is on</strong> (it is off by default, and Android asks your permission the first time). Your voice is sent to the other player through our server, which only passes it on: it is <strong>not recorded, not stored and not listened to</strong>. You can turn MIC or SOUND off at any time, and you can refuse the permission and still play.</p>
+<p><strong>What the server sees.</strong> Like any internet connection it sees your IP address; it uses it only to limit how many connections one address can open and does not store it. Matches are relayed between the two phones and are not kept. A short technical log (a random session id and the times of connecting, matching and leaving, with no name, player id or IP address) is kept for 7 days. A daily backup of the account database is kept for up to 30 days. The server is run by Enigvra Studio and reached through Cloudflare's network.</p>
+<p><strong>Deleting your account.</strong> Open the online screen and tap <em>DELETE ACCOUNT</em> (tap twice to confirm). Your account, friend links, sign-in tokens and counters are erased from the server immediately; copies in backups disappear within 30 days. You can also email us from the address below with your player name.</p>
 
 <h2>What we never collect</h2>
-<p>No email, no account, no advertising ID, no analytics, no crash reports, no location and no payment information. Apart from the online play described above, we receive nothing from the app.</p>
+<p>No email, no advertising ID, no analytics, no crash reports, no location and no payment information. Apart from the optional online account and play described above, we receive nothing from the app.</p>
 
 <h2 id="in-app-purchases">In-app purchases</h2>
 <p>Every purchase is optional, is a single one-time payment (there are no subscriptions), and is processed entirely by <strong>Google Play Billing</strong>, under Google's own terms and privacy policy. The app never sees your card details, billing address or any other payment information — only which product was bought and whether the purchase went through. You can find the Store at <em>Garage → Get coins</em>.</p>
@@ -146,6 +150,7 @@ that receives your data.</p>
 <ul>
 <li><strong>On your device:</strong> until you delete it in the app or uninstall
   the app.</li>
+<li><strong>Online account</strong> (if you made one): until you delete it in the app; backups of the account database are deleted after 30 days. Server logs: 7 days.</li>
 <li><strong>Purchases</strong> are kept by Google Play, the seller of record, under Google's own retention policy; they stay with your Google account so you can restore them.</li>
 <li><strong>Advertising data</strong> is kept by each ad network under its own
   retention policy. Google, for example, anonymises advertising data in its logs
@@ -184,9 +189,9 @@ personal information, and we do not knowingly sell or share the personal
 information of anyone under 16.</p>
 <p><strong>Your rights</strong> are to know what we collect and why, to access it,
 to correct it, to delete it, and to opt out as above — without being treated
-differently for exercising them. Because the app has no account, we hold nothing
-that identifies you, so the quickest route to deletion is
-<strong>Menu → Privacy &amp; data → Delete my data</strong>. To make any request, or to use an
+differently for exercising them. Unless you made an optional online account we hold nothing
+that identifies you; the quickest route to deletion is
+<strong>Menu → Privacy &amp; data → Delete my data</strong> (and <strong>DELETE ACCOUNT</strong> on the online screen for the account). To make any request, or to use an
 authorised agent, email <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a>; we answer within 45
 days and will never ask for a password. If we decline a request you may appeal
 by replying to our answer; if the appeal is declined you may contact your
@@ -197,10 +202,9 @@ state's Attorney General.</p>
 <!-- shared:rights:begin -->
 <h2 id="your-rights">Your privacy rights, wherever you live</h2>
 <p>Whatever the law where you live, you can ask us what we hold about you, ask us
-to correct or delete it, and withdraw any consent you gave. Because the app has
-no account, it holds nothing that identifies you personally, so in practice
+to correct or delete it, and withdraw any consent you gave. Unless you made an optional online account, the app holds nothing that identifies you personally, so in practice
 <strong>Menu → Privacy &amp; data → Delete my data</strong> deletes everything the app keeps, on the
-spot. For anything else, email
+spot; an online account is deleted with <strong>DELETE ACCOUNT</strong> on the online screen. For anything else, email
 <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a>; we answer within 30 days (45 days for US state
 requests) and never ask for a password.</p>
 <ul>
@@ -227,7 +231,7 @@ requests) and never ask for a password.</p>
 
 <!-- shared:children:begin -->
 <h2 id="children">Children</h2>
-<p>Stickbot Brawl is suitable for all ages and collects no personal information from anyone. If a future version shows advertising, any player who may be a child will be shown only non-personalised ads, requested as child-directed and from ad networks certified for Google Play's Families programme, as the Children's Online Privacy Protection Act (COPPA) and Google Play's Families policy require.</p>
+<p>Stickbot Brawl is suitable for all ages and collects no personal information from anyone unless they choose to create an optional online account, which is for players aged 13 and over; younger players can play everything offline. Voice chat is off until a player turns MIC on. If a future version shows advertising, any player who may be a child will be shown only non-personalised ads, requested as child-directed and from ad networks certified for Google Play's Families programme, as the Children's Online Privacy Protection Act (COPPA) and Google Play's Families policy require.</p>
 <p>Its optional in-app purchases are made through Google Play, whose own purchase authentication and Family Link parental approval apply. The app never sees payment details.</p>
 <p>If you believe a child has given us personal information, email
 <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a> and we will delete it.</p>
@@ -236,7 +240,7 @@ requests) and never ask for a password.</p>
 <h2 id="delete-your-data">Delete your data</h2>
 <div class="delete">
 <p><strong>In the app:</strong> open <em>Menu → Privacy &amp; data</em> and tap <strong>Delete my data</strong> twice (the second tap confirms). It erases all saved progress and settings, and the game starts fresh.</p>
-<p><strong>What it cannot delete:</strong> your purchases, which Google Play holds against your Google account (tap <em>Restore purchases</em> to get one-time products back). We hold no copy of your data.</p>
+<p><strong>What it cannot delete:</strong> your purchases, which Google Play holds against your Google account (tap <em>Restore purchases</em> to get one-time products back). We hold no copy of your offline data. If you made an online account, tap <strong>DELETE ACCOUNT</strong> on the online screen to erase it from our server.</p>
 <p><strong>By email:</strong> if you cannot open the app, email
 <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a>
 with the subject “Stickbot Brawl data deletion”. We answer within 30 days and will never

@@ -23,7 +23,7 @@
 </header>
 
 <h1>Privacy Policy — Vertex Racer</h1>
-<p class="updated">Last updated: 8 October 2026 · Package
+<p class="updated">Last updated: 21 November 2026 · Package
 <code>com.brc.racing</code></p>
 
 <p><strong>Vertex Racer</strong> (“the app”, “we”, “us”) is a throttle-only driving game for Android, developed and published by <strong>Enigvra Studio</strong>. This policy
@@ -33,7 +33,7 @@ control you have over it.</p>
 <div class="lead">
   <strong>The short version.</strong>
   <ul>
-    <li>There is <strong>no account</strong>. You never give us a name, an email address or a phone number, because there is nowhere to type one.</li>
+    <li>An <strong>account is optional</strong> and only needed to race online with friends: a player name and a password, never an email address or phone number. Everything else works without one.</li>
     <li>The app shows <strong>one banner advertisement</strong> on the menu screens (never while you are driving), served by Google AdMob. There are no full-screen or video adverts.</li>
     <li>Any in-app purchase is <strong>optional</strong> — coin packs and a one-time <em>Remove ads</em> — and is paid through Google Play. We never see your payment details.</li>
     <li>The app collects <strong>anonymous usage statistics</strong> through Google Firebase Analytics.</li>
@@ -99,7 +99,7 @@ name, Google account or payment details.</p>
 <h3>What the app does <em>not</em> collect</h3>
 
 <p>No name, email address, phone number, postal address, contacts, calendar,
-photos, files, microphone, camera, precise location, browsing or search history,
+photos, files, camera, precise location, browsing or search history,
 list of installed apps, health or fitness data, or payment information — Google
 Play handles payment details for any purchase, and this app is never told them. There is
 no chat, no user-generated content and no way for one player to see another.</p>
@@ -163,8 +163,15 @@ off.</p>
 <h2>Security</h2>
 
 <p>Everything the app sends is encrypted in transit (HTTPS, by the Firebase and
-AdMob SDKs). The app requests only these permissions: <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics and advertising SDKs can reach the network), <code>ACCESS_WIFI_STATE</code>, <code>VIBRATE</code> (haptic feedback), <code>AD_ID</code> (the advertising ID, for the banner advertisement) and, in builds that offer the store, <code>com.android.vending.BILLING</code> (Google Play purchases). It requests
+AdMob SDKs). The app requests only these permissions: <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> (so the analytics and advertising SDKs can reach the network), <code>ACCESS_WIFI_STATE</code>, <code>RECORD_AUDIO</code> (the microphone, only for voice chat in online races: Android asks you the first time you tap MIC and it records only while MIC is on), <code>MODIFY_AUDIO_SETTINGS</code> (plays the other player's voice), <code>VIBRATE</code> (haptic feedback), <code>AD_ID</code> (the advertising ID, for the banner advertisement) and, in builds that offer the store, <code>com.android.vending.BILLING</code> (Google Play purchases). It requests
 nothing else.</p>
+
+<h2 id="online-races">Online races, friends and voice</h2>
+<p>Online races are optional: nothing is sent to our server unless you sign in on the ONLINE screen. During an online race your driving data (position, speed, car) and, only if you turn MIC on, your voice are passed to the other player through our server.</p>
+<p><strong>Optional online account.</strong> To play with friends you create an account with a player name and a password (no email, phone number or real name is asked for, and we advise against using your real name). The server stores: the player name, a salted and hashed password (we cannot read it), a random player id, your car colour, your friend list and pending friend requests, the number of online matches you played, the time you last signed in, and a hashed sign-in token for each phone you stay signed in on. Your friends and opponents see your player name, id and colour, and whether you are online. Accounts are for players aged 13 and over; everything else in the game works without one.</p>
+<p><strong>Voice chat.</strong> In an online lobby and match there is a MIC button. The microphone is used <strong>only while MIC is on</strong> (it is off by default, and Android asks your permission the first time). Your voice is sent to the other player through our server, which only passes it on: it is <strong>not recorded, not stored and not listened to</strong>. You can turn MIC or SOUND off at any time, and you can refuse the permission and still play.</p>
+<p><strong>What the server sees.</strong> Like any internet connection it sees your IP address; it uses it only to limit how many connections one address can open and does not store it. Matches are relayed between the two phones and are not kept. A short technical log (a random session id and the times of connecting, matching and leaving, with no name, player id or IP address) is kept for 7 days. A daily backup of the account database is kept for up to 30 days. The server is run by Enigvra Studio and reached through Cloudflare's network.</p>
+<p><strong>Deleting your account.</strong> Open the online screen and tap <em>DELETE ACCOUNT</em> (tap twice to confirm). Your account, friend links, sign-in tokens and counters are erased from the server immediately; copies in backups disappear within 30 days. You can also email us from the address below with your player name.</p>
 
 <!-- shared:advertising:begin -->
 <h2 id="advertising-choices">Advertising and your ad choices</h2>
@@ -244,6 +251,7 @@ that receives your data.</p>
 <ul>
 <li><strong>On your device:</strong> until you delete it in the app or uninstall
   the app.</li>
+<li><strong>Online account</strong> (if you made one): until you delete it in the app; backups of the account database are deleted after 30 days. Server logs: 7 days.</li>
 <li><strong>Firebase Analytics</strong> event data: 14 months, then Google deletes it automatically. Aggregate reports with no identifier attached may be kept longer.</li>
 <li><strong>Advertising data</strong> is kept by each ad network under its own
   retention policy. Google, for example, anonymises advertising data in its logs
@@ -281,7 +289,7 @@ personal information, and we do not knowingly sell or share the personal
 information of anyone under 16.</p>
 <p><strong>Your rights</strong> are to know what we collect and why, to access it,
 to correct it, to delete it, and to opt out as above — without being treated
-differently for exercising them. Because the app has no account, we hold nothing
+differently for exercising them. Unless you made an optional online account, we hold nothing
 that identifies you, so the quickest route to deletion is
 <strong>Settings → Privacy &amp; data → Delete my data</strong>. To make any request, or to use an
 authorised agent, email <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a>; we answer within 45
@@ -294,8 +302,7 @@ state's Attorney General.</p>
 <!-- shared:rights:begin -->
 <h2 id="your-rights">Your privacy rights, wherever you live</h2>
 <p>Whatever the law where you live, you can ask us what we hold about you, ask us
-to correct or delete it, and withdraw any consent you gave. Because the app has
-no account, it holds nothing that identifies you personally, so in practice
+to correct or delete it, and withdraw any consent you gave. Unless you made an optional online account, the app holds nothing that identifies you personally, so in practice
 <strong>Settings → Privacy &amp; data → Delete my data</strong> deletes everything the app keeps, on the
 spot. For anything else, email
 <a href="mailto:bilalsafdar3014@gmail.com">bilalsafdar3014@gmail.com</a>; we answer within 30 days (45 days for US state
@@ -339,6 +346,7 @@ analytics copy removed as well, email
 <a href="mailto:bilalsafdar3014@gmail.com?subject=Vertex%20Racer%20data%20deletion">bilalsafdar3014@gmail.com</a>
 with the subject “Vertex Racer data deletion”. We answer within 30 days. We will never
 ask for a password.</p>
+<p><strong>Online account:</strong> on the ONLINE screen tap <strong>DELETE ACCOUNT</strong> (twice to confirm); it is erased from our server immediately and from backups within 30 days.</p>
 <p><strong>Uninstalling</strong> the app also deletes everything it stored on your
 device.</p>
 </div>
