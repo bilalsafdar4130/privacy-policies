@@ -22,6 +22,7 @@ https://bilalsafdar4130.github.io/privacy-policies/
 | Studio Tycoon | `studio-tycoon.html` |
 | Stickbot Brawl | `stickbot-brawl.html` |
 | Echo Rush | `echo-rush.html` |
+| Rain Haven | `rain-haven.html` |
 | ZB Chat | `zb-chat.html` |
 | BunyadIlm | `bunyadilm.html` |
 
