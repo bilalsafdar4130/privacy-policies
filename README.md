@@ -23,6 +23,7 @@ https://bilalsafdar4130.github.io/privacy-policies/
 | Stickbot Brawl | `stickbot-brawl.html` |
 | Echo Rush | `echo-rush.html` |
 | Rain Haven | `rain-haven.html` |
+| Slice Empire | `slice-empire.html` |
 | ZB Chat | `zb-chat.html` |
 | BunyadIlm | `bunyadilm.html` |
 
