@@ -21,6 +21,7 @@ https://bilalsafdar4130.github.io/privacy-policies/
 | Cut & Drop | `cut-and-drop.html` |
 | Studio Tycoon | `studio-tycoon.html` |
 | Stickbot Brawl | `stickbot-brawl.html` |
+| Echo Rush | `echo-rush.html` |
 | ZB Chat | `zb-chat.html` |
 | BunyadIlm | `bunyadilm.html` |
 
