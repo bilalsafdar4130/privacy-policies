@@ -213,6 +213,13 @@ APPS = {
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
+    "slice-empire": {
+        "name": "Slice Empire", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "22 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
 }
 
 GOOGLE_PARTNERS = "https://policies.google.com/technologies/partner-sites"
