@@ -199,6 +199,13 @@ APPS = {
         "delete_path": "Menu → Privacy &amp; data → Delete my data",
         "children": "all",
     },
+    "glow-huddle": {
+        "name": "Glow Huddle", "ads": "future", "analytics": False, "purchases": False,
+        "updated": "22 November 2026",
+        "ad_free": "", "ad_settings": "", "analytics_off": "",
+        "delete_path": "Menu → Privacy &amp; data → Delete my data",
+        "children": "all",
+    },
     "echo-rush": {
         "name": "Echo Rush", "ads": "future", "analytics": False, "purchases": False,
         "updated": "21 November 2026",
